@@ -1,0 +1,344 @@
+hotkeys:
+  copy-current-path: []
+  ctrl-c:
+    - Ctrl-C
+  copy:
+    - Ctrl-Shift-C
+  paste:
+    - Ctrl-Shift-V
+    - Shift-Insert
+  select-all:
+    - Ctrl-Shift-A
+  clear: []
+  zoom-in:
+    - Ctrl-=
+    - Ctrl-Shift-=
+  zoom-out:
+    - Ctrl--
+    - Ctrl-Shift--
+  reset-zoom:
+    - Ctrl-0
+  home:
+    - Home
+  end:
+    - End
+  previous-word:
+    - Ctrl-Left
+  next-word:
+    - Ctrl-Right
+  delete-previous-word:
+    - Ctrl-Backspace
+  delete-line:
+    - Ctrl-Shift-Backspace
+  delete-next-word:
+    - Ctrl-Delete
+  search:
+    - Ctrl-Shift-F
+  pane-focus-all:
+    - Ctrl-Shift-I
+  focus-all-tabs:
+    - Ctrl-Alt-Shift-I
+  scroll-to-top:
+    - Ctrl-PageUp
+  scroll-up:
+    - Alt-PageUp
+  scroll-down:
+    - Alt-PageDown
+  scroll-to-bottom:
+    - Ctrl-PageDown
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings-tab: {}
+  settings:
+    - Ctrl-,
+  serial:
+    - Alt-K
+  restart-serial-session: []
+  new-tab:
+    - Ctrl-Shift-T
+  toggle-window:
+    - Ctrl-Space
+  new-window:
+    - Ctrl-Shift-N
+  profile: {}
+  profile-selectors: {}
+  toggle-fullscreen:
+    - F11
+    - Alt-Enter
+  close-tab:
+    - Ctrl-Shift-W
+  reopen-tab:
+    - Ctrl-Shift-Z
+  toggle-last-tab: []
+  rename-tab:
+    - Ctrl-Shift-R
+  next-tab:
+    - Ctrl-Shift-Right
+    - Ctrl-Tab
+  previous-tab:
+    - Ctrl-Shift-Left
+    - Ctrl-Shift-Tab
+  move-tab-left:
+    - Ctrl-Shift-PageUp
+  move-tab-right:
+    - Ctrl-Shift-PageDown
+  rearrange-panes:
+    - Ctrl-Shift
+  duplicate-tab: []
+  restart-tab: []
+  explode-tab:
+    - Ctrl-Shift-.
+  combine-tabs:
+    - Ctrl-Shift-,
+  tab-1:
+    - Alt-1
+  tab-2:
+    - Alt-2
+  tab-3:
+    - Alt-3
+  tab-4:
+    - Alt-4
+  tab-5:
+    - Alt-5
+  tab-6:
+    - Alt-6
+  tab-7:
+    - Alt-7
+  tab-8:
+    - Alt-8
+  tab-9:
+    - Alt-9
+  tab-10:
+    - Alt-0
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - Ctrl-Shift-S
+  split-bottom:
+    - Ctrl-Shift-D
+  split-left: []
+  split-top: []
+  pane-nav-right:
+    - Ctrl-Alt-Right
+  pane-nav-down:
+    - Ctrl-Alt-Down
+  pane-nav-up:
+    - Ctrl-Alt-Up
+  pane-nav-left:
+    - Ctrl-Alt-Left
+  pane-nav-previous:
+    - Ctrl-Alt-[
+  pane-nav-next:
+    - Ctrl-Alt-]
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-maximize:
+    - Ctrl-Alt-Enter
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  switch-profile:
+    - Ctrl-Alt-T
+  profile-selector:
+    - Ctrl-Shift-E
+  command-selector:
+    - Ctrl-Shift-P
+  close-pane:
+    - Ctrl-Alt-Shift-W
+  reconnect-tab: []
+terminal:
+  frontend: xterm-webgl
+  fontSize: 14
+  fontWeightBold: 600
+  fallbackFont: null
+  linePadding: 0
+  bell: 'off'
+  bracketedPaste: true
+  background: theme
+  ligatures: false
+  cursor: beam
+  cursorBlink: true
+  hideTabIndex: false
+  showTabProfileIcon: false
+  hideCloseButton: false
+  hideTabOptionsButton: false
+  rightClick: clipboard
+  pasteOnMiddleClick: false
+  copyOnSelect: true
+  copyAsHTML: true
+  scrollOnInput: true
+  altIsMeta: false
+  wordSeparator: ' ()[]{}''"'
+  colorScheme:
+    name: Catppuccin Mocha
+    foreground: HSL(226, 64%, 88%)
+    background: HSL(240, 21%, 15%)
+    selection: null
+    cursor: HSL(10, 56%, 91%)
+    cursorAccent: null
+    colors:
+      - HSL(234, 13%, 31%)
+      - HSL(343, 81%, 75%)
+      - HSL(115, 54%, 76%)
+      - HSL(41, 86%, 83%)
+      - HSL(217, 92%, 76%)
+      - HSL(316, 72%, 86%)
+      - HSL(189, 71%, 73%)
+      - HSL(226, 64%, 88%)
+      - HSL(234, 13%, 36%)
+      - HSL(343, 81%, 80%)
+      - HSL(115, 54%, 81%)
+      - HSL(41, 86%, 88%)
+      - HSL(217, 92%, 81%)
+      - HSL(316, 72%, 91%)
+      - HSL(189, 71%, 78%)
+      - HSL(226, 64%, 93%)
+  customColorSchemes:
+    - name: Aura Dark
+      foreground: '#edecee'
+      background: '#15141b'
+      selection: '#3d375e7f'
+      cursor: '#a277ff'
+      cursorAccent: ''
+      colors:
+        - '#15141b'
+        - '#f694ff'
+        - '#f694ff'
+        - '#ffca85'
+        - '#a277ff'
+        - '#ffca85'
+        - '#ffca85'
+        - '#edecee'
+        - '#4d4d4d'
+        - '#ffca85'
+        - '#61ffca'
+        - '#ffca85'
+        - '#a277ff'
+        - '#ffca85'
+        - '#61ffca'
+        - '#edecee'
+    - name: Catppuccin Mocha
+      foreground: HSL(226, 64%, 88%)
+      background: HSL(240, 21%, 15%)
+      selection: null
+      cursor: HSL(10, 56%, 91%)
+      cursorAccent: null
+      colors:
+        - HSL(234, 13%, 31%)
+        - HSL(343, 81%, 75%)
+        - HSL(115, 54%, 76%)
+        - HSL(41, 86%, 83%)
+        - HSL(217, 92%, 76%)
+        - HSL(316, 72%, 86%)
+        - HSL(189, 71%, 73%)
+        - HSL(226, 64%, 88%)
+        - HSL(234, 13%, 36%)
+        - HSL(343, 81%, 80%)
+        - HSL(115, 54%, 81%)
+        - HSL(41, 86%, 88%)
+        - HSL(217, 92%, 81%)
+        - HSL(316, 72%, 91%)
+        - HSL(189, 71%, 78%)
+        - HSL(226, 64%, 93%)
+  warnOnMultilinePaste: true
+  searchRegexAlwaysEnabled: false
+  searchOptions:
+    regex: false
+    wholeWord: false
+    caseSensitive: false
+  detectProgress: true
+  scrollbackLines: 25000
+  drawBoldTextInBrightColors: true
+  sixel: true
+  minimumContrastRatio: 4
+  trimWhitespaceOnPaste: true
+  font: CaskaydiaCove Nerd Font Mono
+  autoOpen: false
+  useConPTY: true
+  environment: {}
+  setComSpec: false
+  profile: local:binzsh
+  showBuiltinProfiles: true
+  showRecentProfiles: 3
+  paneResizeStep: 0.1
+  focusFollowsMouse: false
+  identification: wt
+  fontWeight: 500
+ssh:
+  warnOnClose: false
+  winSCPPath: null
+  agentType: auto
+  agentPath: null
+  x11Display: null
+  knownHosts: []
+  verifyHostKeys: true
+  clearServiceMessagesOnConnect: true
+clickableLinks:
+  modifier: null
+accessibility:
+  animations: true
+appearance:
+  dock: 'off'
+  dockScreen: current
+  dockFill: 0.5
+  dockSpace: 1
+  dockHideOnBlur: false
+  dockAlwaysOnTop: true
+  flexTabs: false
+  tabsLocation: top
+  tabsInFullscreen: false
+  cycleTabs: true
+  theme: Follow the color scheme
+  css: '/* * { color: blue !important; } */'
+  vibrancyType: blur
+  lastTabClosesWindow: false
+  spaciness: 1
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+recoverTabs: true
+enableAnalytics: false
+enableWelcomeTab: false
+electronFlags:
+  - - force_discrete_gpu
+    - '0'
+enableAutomaticUpdates: true
+version: 3
+vault: null
+encrypted: false
+enableExperimentalFeatures: false
+hacks:
+  disableGPU: false
+  disableVibrancyWhileDragging: false
+  enableFluentBackground: false
+language: en-US
+pluginBlacklist: []
+syncConfig:
+  type: GitHub
+  token: >-
+    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
+configSync:
+  parts: {}
+  token: >-
+    5ac865f1e2c82ea88aa21f365073df48b49e3a6aaf5fca02b5162a701320cf5496b7ebe2420dfc02480a1d36778f591f8e00506e00ede56419511aa72e794186
+  configID: 27508
+providerBlacklist: []
+profiles: []
+commandBlacklist: []
