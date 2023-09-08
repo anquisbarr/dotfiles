@@ -1,12 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -120,10 +111,6 @@ source $ZSH/oh-my-zsh.sh
 alias python=python3
 alias pip=pip3
 
-#NVM config
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 #JAVA config
 JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home"
 export PATH="${JAVA_HOME}/bin:${PATH}"
@@ -132,9 +119,12 @@ export PATH="${JAVA_HOME}/bin:${PATH}"
 MVN_HOME="/Users/sebastianqb/Downloads/apache-maven-3.8.6"
 export PATH="${MVN_HOME}/bin:${PATH}"
 
+#FNM config
+eval "$(fnm env --use-on-cd)"
+
 #personal alias
-alias personal="~/personal/"
-alias university="~/university"
+alias p="~/personal/"
+alias uni="~/university"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -152,5 +142,26 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export DENO_INSTALL="/Users/sebastianqb/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+# pnpm
+export PNPM_HOME="/Users/squispeb/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# pyenv start
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+# pyenv end
+
+# flutter 
+export FLUTTER_HOME="/Users/squispeb/.flutter/flutter"
+export PATH="$FLUTTER_HOME/bin:$PATH"
+
+#git aliases
+alias gts="git status"
+alias gcm="git commit -m"
+eval $(/opt/homebrew/bin/brew shellenv)
+
+
+# bun completions
+[ -s "/Users/squispeb/.bun/_bun" ] && source "/Users/squispeb/.bun/_bun"
