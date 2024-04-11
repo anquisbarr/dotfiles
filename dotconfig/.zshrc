@@ -160,8 +160,13 @@ export PATH="$FLUTTER_HOME/bin:$PATH"
 #git aliases
 alias gts="git status"
 alias gcm="git commit -m"
+
+# command aliases
+alias lg="lazygit"
+
 eval $(/opt/homebrew/bin/brew shellenv)
 
 
 # bun completions
 [ -s "/Users/squispeb/.bun/_bun" ] && source "/Users/squispeb/.bun/_bun"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
